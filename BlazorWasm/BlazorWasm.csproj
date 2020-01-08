@@ -13,7 +13,7 @@
   <PropertyGroup>
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <DocsDir>..\docs</DocsDir>
-    <DateTime>"$([System.DateTime]::Now.ToString(yyyy-MM-dd hh:mm:ss tt))"</DateTime>
+    <DateTime>"$([System.DateTime]::Now.ToString())"</DateTime>
   </PropertyGroup>
   <ItemGroup>
     <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
