@@ -13,6 +13,7 @@
   <PropertyGroup>
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <DocsDir>..\docs</DocsDir>
+    <DateTime>"$([System.DateTime]::Now.ToString(yyyyMMdd-mmss))"</DateTime>
   </PropertyGroup>
   <ItemGroup>
     <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
@@ -20,7 +21,7 @@
     <MakeDir Directories="$(DocsDir)" Condition="!Exists('$(DocsDir)')" />
     <Copy SourceFiles="@(DistDir)" DestinationFolder="$(DocsDir)\%(RecursiveDir)" SkipUnchangedFiles="true"/>
     <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
-    <Exec Command="git commit -a"/>
+    <Exec Command="git commit -a -m $(DateTime) "/>
     <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; $([System.IO.Path]::GetDirectoryName($(MSBuildProjectDirectory)))\docs" Importance="high"/>
   </Target>
 </Project>
