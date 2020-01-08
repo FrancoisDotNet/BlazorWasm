@@ -22,6 +22,7 @@
     <Copy SourceFiles="@(DistDir)" DestinationFolder="$(DocsDir)\%(RecursiveDir)" SkipUnchangedFiles="true"/>
     <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
     <Exec Command="git commit -a -m $(DateTime) "/>
-    <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; $([System.IO.Path]::GetDirectoryName($(MSBuildProjectDirectory)))\docs" Importance="high"/>
+    <Exec Command="git push origin "/>
+    <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; Commit $(DateTime) pushed" Importance="high"/>
   </Target>
 </Project>
