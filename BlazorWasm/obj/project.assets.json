@@ -1116,11 +1116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meyerf\\Downloads\\dev\\repos\\BlazorWasm\\BlazorWasm.csproj",
+      "projectUniqueName": "C:\\Users\\meyerf\\Downloads\\dev\\repos\\BlazorWasm\\BlazorWasm\\BlazorWasm.csproj",
       "projectName": "BlazorWasm",
-      "projectPath": "C:\\Users\\meyerf\\Downloads\\dev\\repos\\BlazorWasm\\BlazorWasm.csproj",
+      "projectPath": "C:\\Users\\meyerf\\Downloads\\dev\\repos\\BlazorWasm\\BlazorWasm\\BlazorWasm.csproj",
       "packagesPath": "C:\\Users\\meyerf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meyerf\\Downloads\\dev\\repos\\BlazorWasm\\obj\\",
+      "outputPath": "C:\\Users\\meyerf\\Downloads\\dev\\repos\\BlazorWasm\\BlazorWasm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\meyerf\\AppData\\Roaming\\NuGet\\NuGet.Config"
