@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.1.0-preview4.19579.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.1.0-preview4.19579.2" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.1.0-preview4.19579.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.DevServer" Version="3.1.0-preview4.19579.2" PrivateAssets="all" />
+  </ItemGroup>
+  <Target Name="GithubPagesPublish" AfterTargets="AfterPublish">
+  <PropertyGroup>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <DocsDir>..\docs</DocsDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
+  </ItemGroup> 
+    <MakeDir Directories="$(DocsDir)" Condition="!Exists('$(DocsDir)')" />
+    <Copy SourceFiles="@(DistDir)" DestinationFolder="$(DocsDir)\%(RecursiveDir)" SkipUnchangedFiles="true"/>
+    <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
+    <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; $([System.IO.Path]::GetDirectoryName($(MSBuildProjectDirectory)))\docs" Importance="high"/>
+  </Target>
+</Project>
