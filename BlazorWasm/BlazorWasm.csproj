@@ -22,8 +22,8 @@ dotnet %~dp0$(AssemblyName).dll %*</LicenseLines>
     </ItemGroup> 
     <MakeDir Directories="$(DocsDir)" Condition="!Exists('$(DocsDir)')" />
     <Copy SourceFiles="@(DistDir)" DestinationFolder="$(DocsDir)\%(RecursiveDir)" SkipUnchangedFiles="true"/>
-    <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="true"/>
-    <WriteLinesToFile Lines="$(LicenseLines)" File="$(DocsDir)\License.txt" Overwrite="false"/>
+    <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
+    <WriteLinesToFile Lines="$(LicenseLines)" File="$(DocsDir)\License.txt" Overwrite="true"/>
     <RemoveDir Directories="obj\;bin\" Condition=" '$(Configuration)' == 'Release' "/>
     <Exec Command="git commit -a -m $(DateTime) "/>
     <Exec Command="git push origin "/>
