@@ -25,23 +25,26 @@ dotnet %~dp0$(AssemblyName).dll %*</LicenseLines>
     <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
     <WriteLinesToFile
       Lines="MIT License%0D
-        Copyright (c) 2019 FrancoisDotNet%0D
-        Permission is hereby granted, free of charge, to any person obtaining a copy%0D
-        of this software and associated documentation files %22the Software%22, to deal%0D
-        in the Software without restriction, including without limitation the rights%0D
-        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell%0D
-        copies of the Software, and to permit persons to whom the Software is%0D
-        furnished to do so, subject to the following conditions:%0D
-        The above copyright notice and this permission notice shall be included in all
-        copies or substantial portions of the Software.
-
-        THE SOFTWARE IS PROVIDED %22AS IS%22, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-        SOFTWARE."
+%0D
+Copyright (c) 2019 FrancoisDotNet%0D
+%0D
+Permission is hereby granted, free of charge, to any person obtaining a copy%0D
+of this software and associated documentation files (%22the Software%22), to deal%0D
+in the Software without restriction, including without limitation the rights%0D
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell%0D
+copies of the Software, and to permit persons to whom the Software is%0D
+furnished to do so, subject to the following conditions:%0D
+%0D
+The above copyright notice and this permission notice shall be included in all%0D
+copies or substantial portions of the Software.%0D
+%0D
+THE SOFTWARE IS PROVIDED %22AS IS%22, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR%0D
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,%0D
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE%0D
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER%0D
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,%0D
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE%0D
+SOFTWARE."
       File="$(DocsDir)\License.txt" Overwrite="true" />
     <RemoveDir Directories="obj\;bin\" Condition=" '$(Configuration)' == 'Release' "/>
     <Exec Command="git commit -a -m $(DateTime) "/>
