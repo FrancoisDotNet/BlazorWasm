@@ -10,22 +10,20 @@
     <PackageReference Include="Microsoft.AspNetCore.Blazor.DevServer" Version="3.1.0-preview4.19579.2" PrivateAssets="all" />
   </ItemGroup>
   <Target Name="GithubPagesPublish" AfterTargets="AfterPublish">
-  <PropertyGroup>
-    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
-    <DocsDir>..\docs</DocsDir>
-    <DateTime>"$([System.DateTime]::Now.ToString())"</DateTime>
-  </PropertyGroup>
-  <ItemGroup>
-    <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
-  </ItemGroup> 
+    <PropertyGroup>
+      <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+      <DocsDir>..\docs</DocsDir>
+      <DateTime>"$([System.DateTime]::Now.ToString())"</DateTime>
+    </PropertyGroup>
+    <ItemGroup>
+      <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
+    </ItemGroup> 
     <MakeDir Directories="$(DocsDir)" Condition="!Exists('$(DocsDir)')" />
     <Copy SourceFiles="@(DistDir)" DestinationFolder="$(DocsDir)\%(RecursiveDir)" SkipUnchangedFiles="true"/>
     <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
+    <RemoveDir Directories="obj\;bin\" Condition=" '$(Configuration)' == 'Release' "/>
     <Exec Command="git commit -a -m $(DateTime) "/>
     <Exec Command="git push origin "/>
     <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; Commit $(DateTime) pushed" Importance="high"/>
-  </Target>
-  <Target Name="CleanProject" AfterTargets="GithubPagesPublish" Condition=" '$(Configuration)' == 'Release' ">
-    <RemoveDir Directories="obj\;bin\" />
   </Target>
 </Project>
