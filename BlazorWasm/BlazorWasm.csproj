@@ -25,7 +25,7 @@
     <Exec Command="git push origin "/>
     <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; Commit $(DateTime) pushed" Importance="high"/>
   </Target>
-  <Target Name="Clean">
-    <RemoveDir Directories="obj;bin" />
+  <Target Name="CleanProject" AfterTargets="GithubPagesPublish" Condition=" '$(Configuration)' == 'Release' ">
+    <RemoveDir Directories="obj\;bin\" />
   </Target>
 </Project>
