@@ -14,19 +14,19 @@
       <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
       <DocsDir>..\docs</DocsDir>
       <DateTime>"$([System.DateTime]::Now.ToString())"</DateTime>
-      <LicenseLines>@ECHO OFF
-dotnet %~dp0$(AssemblyName).dll %*</LicenseLines>
+      <UserName></UserName>
     </PropertyGroup>
     <ItemGroup>
       <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
-    </ItemGroup> 
+    </ItemGroup>
     <MakeDir Directories="$(DocsDir)" Condition="!Exists('$(DocsDir)')" />
     <Copy SourceFiles="@(DistDir)" DestinationFolder="$(DocsDir)\%(RecursiveDir)" SkipUnchangedFiles="true"/>
     <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
+    <Exec Command="git config user.name" Outputs="$(UserName)" />
     <WriteLinesToFile
       Lines="MIT License%0D
 %0D
-Copyright (c) 2019 FrancoisDotNet%0D
+Copyright (c) 2019 $(UserName)%0D
 %0D
 Permission is hereby granted, free of charge, to any person obtaining a copy%0D
 of this software and associated documentation files (%22the Software%22), to deal%0D
