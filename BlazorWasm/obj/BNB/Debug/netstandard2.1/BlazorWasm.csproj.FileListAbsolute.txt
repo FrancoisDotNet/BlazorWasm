@@ -75,9 +75,6 @@ C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\obj\BNB\Debug\netstandard2.1\blaz
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\BlazorWasm.blazor.config
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\BlazorWasm.dll
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\BlazorWasm.pdb
-C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\wasm\mono.js
-C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\wasm\mono.wasm
-C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\blazor.webassembly.js
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\_bin\BlazorWasm.dll
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\_bin\Microsoft.AspNetCore.Authorization.dll
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\_bin\Microsoft.AspNetCore.Blazor.dll
@@ -105,6 +102,9 @@ C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstand
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\_bin\WebAssembly.Bindings.dll
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\_bin\WebAssembly.Net.Http.dll
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\blazor.boot.json
+C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\wasm\mono.js
+C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\wasm\mono.wasm
+C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\dist\_framework\blazor.webassembly.js
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\Microsoft.AspNetCore.Authorization.dll
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\Microsoft.AspNetCore.Blazor.dll
 C:\Users\meyerf\Downloads\dev\repos\BlazorWasm\BlazorWasm\bin\BNB\Debug\netstandard2.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
