@@ -25,7 +25,7 @@ dotnet %~dp0$(AssemblyName).dll %*</LicenseLines>
     <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
     <WriteLinesToFile
       Lines="MIT License%D
-        Copyright (c) 2019 FrancoisDotNet%D
+        Copyright (c) 2019 FrancoisDotNet%A
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files %22the Software%22, to deal
         in the Software without restriction, including without limitation the rights
