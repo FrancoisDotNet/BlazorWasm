@@ -48,7 +48,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE%0D
 SOFTWARE."
       File="$(DocsDir)\License.txt" Overwrite="false" />
     <RemoveDir Directories="obj\;bin\" Condition=" '$(Configuration)' == 'Release' "/>
-    <Exec Command="git commit -a -m $(DateTime) "/>
+    <Exec Command="git add -A"/>
+    <Exec Command="git commit -a -m $(DateTime)"/>
     <Exec Command="git push origin"/>
     <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; https://$(UserName).github.io/$(MSBuildProjectName)" Importance="high"/>
   </Target>
