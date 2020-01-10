@@ -49,7 +49,7 @@ SOFTWARE."
       File="$(DocsDir)\License.txt" Overwrite="false" />
     <RemoveDir Directories="obj\;bin\" Condition=" '$(Configuration)' == 'Release' "/>
     <Exec Command="git commit -a -m $(DateTime) "/>
-    <Exec Command="git push origin "/>
+    <Exec Command="git push origin"/>
     <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; https://$(UserName).github.io/$(MSBuildProjectName)" Importance="high"/>
   </Target>
 </Project>
