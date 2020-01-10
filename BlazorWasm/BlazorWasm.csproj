@@ -14,7 +14,6 @@
       <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
       <DocsDir>..\docs</DocsDir>
       <DateTime>"$([System.DateTime]::Now.ToString())"</DateTime>
-      <UserName></UserName>
     </PropertyGroup>
     <ItemGroup>
       <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
@@ -23,7 +22,7 @@
     <Copy SourceFiles="@(DistDir)" DestinationFolder="$(DocsDir)\%(RecursiveDir)" SkipUnchangedFiles="true"/>
     <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
     <Exec Command="git config user.name" ConsoleToMsBuild="true">
-      <Output TaskParameter="ConsoleOutput" PropertyName="U" />
+      <Output TaskParameter="ConsoleOutput" PropertyName="UserName" />
     </Exec>
     <WriteLinesToFile
       Lines="MIT License%0D
