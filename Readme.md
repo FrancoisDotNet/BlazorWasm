@@ -12,7 +12,7 @@ THIS IS A DRAFT
 
 1. Create an [GitHub](https://github.com/join) account and a repository to host the project
 2. ```git config --global user.name "MyGithubUsername"``` and ```git config --global user.email "my-github@users.noreply.github.com"```
-
+3. 
 
 <ol>
 <li>GitHub : account, </li>
