@@ -1,0 +1,5 @@
+﻿<linker>
+  <assembly fullname="BlazorWasm">
+    <type fullname="*" required="true" />
+  </assembly>
+</linker>
