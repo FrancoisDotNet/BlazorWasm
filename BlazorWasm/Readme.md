@@ -5,9 +5,15 @@ THIS IS A DRAFT
 ## 1 What you need Open source and cross-platform tools
 
 <ol>
-<li>A Software Development Kit (SDK) to build code : [.NET Core](https://dotnet.microsoft.com/download)</li>
-<li>An Integrated Development Environment (IDE) to write code : [VS Code](https://code.visualstudio.com/download)</li>
-<li>A Version Control System (VCS) to share code : [Git](https://git-scm.com/downloads)</li>
+<li>A Software Development Kit (SDK) to build code :
+
+[.NET Core](https://dotnet.microsoft.com/download)</li>
+<li>An Integrated Development Environment (IDE) to write code :
+
+[VS Code](https://code.visualstudio.com/download)</li>
+<li>A Version Control System (VCS) to share code :
+
+[Git](https://git-scm.com/downloads)</li>
 </ol>
 
 ## 2 
