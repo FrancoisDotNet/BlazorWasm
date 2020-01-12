@@ -2,15 +2,17 @@
 
 THIS IS A DRAFT
 
-## 1 What you need Open source and cross-platform tools
+## 1 W
 
-1. A [SDK](https://en.wikipedia.org/wiki/Software_development_kit "Software Development Kit") to build code : [.NET Core](https://dotnet.microsoft.com/download)
-2. An Integrated Development Environment (IDE) to write code : [VS Code](https://code.visualstudio.com/download)
-3. A Version Control System (VCS) to share code : [Git](https://git-scm.com/downloads)
+1. [.NET Core SDK](https://dotnet.microsoft.com/download)
+2. [VS Code IDE](https://code.visualstudio.com/download)
+3. [Git SCM](https://git-scm.com/downloads)
 
-[1]:https://dotnet.microsoft.com/download
+## 2
 
-## 2 
+1. Create an [GitHub](https://github.com/join) account and a repository to host the project
+2. ```git config --global user.name "MyGithubUsername"``` and ```git config --global user.email "my-github@users.noreply.github.com"```
+
 
 <ol>
 <li>GitHub : account, </li>
