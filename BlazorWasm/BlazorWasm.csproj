@@ -12,15 +12,11 @@
   <Target Name="GithubPagesPublish" AfterTargets="AfterPublish">
     <PropertyGroup>
       <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
-      <DocsDir>..\docs</DocsDir>
-      <DateTime>"$([System.DateTime]::Now.ToString())"</DateTime>
     </PropertyGroup>
     <ItemGroup>
       <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
     </ItemGroup>
-    <MakeDir Directories="$(DocsDir)" Condition="!Exists('$(DocsDir)')" />
-    <Copy SourceFiles="@(DistDir)" DestinationFolder="$(DocsDir)\%(RecursiveDir)" SkipUnchangedFiles="true"/>
-    <WriteLinesToFile File="$(DocsDir)\.nojekyll" Overwrite="false"/>
+    <Copy SourceFiles="@(DistDir)" DestinationFolder="..\docs\%(RecursiveDir)" SkipUnchangedFiles="true"/>
     <Exec Command="git config user.name" ConsoleToMsBuild="true">
       <Output TaskParameter="ConsoleOutput" PropertyName="UserName" />
     </Exec>
@@ -49,7 +45,7 @@ SOFTWARE."
       File="..\License.txt" Overwrite="true"/>
     <RemoveDir Directories="obj\;bin\" Condition=" '$(Configuration)' == 'Release' "/>
     <Exec Command="git add -A"/>
-    <Exec Command="git commit -a -m $(DateTime)"/>
+    <Exec Command="git commit -a -m $([System.DateTime]::Now.ToString())"/>
     <Exec Command="git push origin"/>
     <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; https://$(UserName).github.io/$(MSBuildProjectName)" Importance="high"/>
   </Target>
