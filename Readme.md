@@ -11,5 +11,5 @@
 - `BlazorWasm` **project** directory :
   - *`BlazorWasm.csproj`* [Project file](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#project-file)
   - *`Program.cs`* [App entry point](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#entry-point)
-  - `wwwroot` [static files subdirectory](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#static-files) (contains the *`index.html`* HTML document )
-  - *`Body.razor`* [Razor component](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#razor-components)
+  - `wwwroot` [Web static files subdirectory](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#static-files) (contains the *`index.html`* HTML document)
+  - *`Body.razor`* [UI razor component](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#razor-components)
