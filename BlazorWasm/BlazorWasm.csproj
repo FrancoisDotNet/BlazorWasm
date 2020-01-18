@@ -12,6 +12,7 @@
   <Target Name="GithubPagesPublish" AfterTargets="AfterPublish">
     <PropertyGroup>
       <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+      <DateTime>"$([System.DateTime]::Now.ToString())"</DateTime>
     </PropertyGroup>
     <ItemGroup>
       <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
@@ -45,7 +46,7 @@ SOFTWARE."
       File="..\License.txt" Overwrite="true"/>
     <RemoveDir Directories="obj\;bin\" Condition=" '$(Configuration)' == 'Release' "/>
     <Exec Command="git add -A"/>
-    <Exec Command="git commit -a -m $([System.DateTime]::Now.ToString())"/>
+    <Exec Command="git commit -a -m $(DateTime)"/>
     <Exec Command="git push origin"/>
     <Message Text="$(MSBuildProjectName) (GitHub Pages) -&gt; https://$(UserName).github.io/$(MSBuildProjectName)" Importance="high"/>
   </Target>
