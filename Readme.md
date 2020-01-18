@@ -5,7 +5,7 @@
 2. [VS Code IDE](https://code.visualstudio.com/download)
 3. [Git SCM](https://git-scm.com/downloads)
 ## II. Get the code
-1. [Join GitHub](https://github.com/join) and [create a repository from this template](https://github.com/FrancoisDotNet/BlazorWasm/generate).
+1. [Create a repository from this template](https://github.com/FrancoisDotNet/BlazorWasm/generate).
 2. Set your Git [username](https://help.github.com/en/github/using-git/setting-your-username-in-git#setting-your-git-username-for-every-repository-on-your-computer) and [email](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address#setting-your-email-address-for-every-repository-on-your-computer) for every repository on your computer.
 3. [Clone the repository you just created on your computer](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 ## III. Undestand the code
