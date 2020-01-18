@@ -1,7 +1,7 @@
 # Blazor WebAssembly
 
 ## Prerequisites
-1. **SDK** : [.NET Core](https://dotnet.microsoft.com/download)
+1. **SDK**[Software Development Kit] : [.NET Core](https://dotnet.microsoft.com/download)
 2. **IDE** : [VS Code](https://code.visualstudio.com/download)
 3. **SCM** : [Git](https://git-scm.com/downloads)
 
@@ -11,3 +11,5 @@
 - `BlazorWasm` **project** directory :
   - Configuration files : *`BlazorWasm.csproj`* [Project file](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#project-file) and *`Program.cs`* [App entry point](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#entry-point)
   - Web UI files : *`Body.razor`* [UI razor component](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#razor-components) and *`index.html`* UI root document (in `wwwroot` [static files](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure#static-files) subdirectory)
+
+[Software Development Kit]: https://en.wikipedia.org/wiki/Software_development_kit
