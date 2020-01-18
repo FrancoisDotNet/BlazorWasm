@@ -1,5 +1,4 @@
-# Blazor WebAssembly Web App Template
-> The minimum amount of code to build a Blazor WebAssembly Web App.
+# Blazor WebAssembly Template
 ## I. Install the tools
 1. [.NET Core SDK](https://dotnet.microsoft.com/download)
 2. [VS Code IDE](https://code.visualstudio.com/download)
