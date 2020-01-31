@@ -14,8 +14,7 @@
       <DistDir Include="$(PublishDir)$(BlazorPublishDistDir)**\*" />
     </ItemGroup>
     <Copy SourceFiles="@(DistDir)" DestinationFolder="..\docs\%(RecursiveDir)" SkipUnchangedFiles="true"/>
-    <RemoveDir Directories="obj\;bin\" Condition=" '$(Configuration)' == 'Release' "/>
-    <Exec Command="git add -A
+   <Exec Command="git add -A
       git commit -a
       git push origin"/>
   </Target>
