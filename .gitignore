@@ -1,3 +1,5 @@
 bin
 obj
-*.nojekyll
+docs
+.nojekyll
+License.txt
