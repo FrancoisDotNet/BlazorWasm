@@ -2,9 +2,9 @@
 
 ## Prerequisites
 
-1. SDK : [.NET Core](https://dotnet.microsoft.com/download)
-2. IDE : [VS Code](https://code.visualstudio.com/download)
-3. SCM : [Git](https://git-scm.com/downloads)
+1. [.NET Core SDK](https://dotnet.microsoft.com/download)
+2. [VS Code IDE](https://code.visualstudio.com/download)
+3. [Git SCM](https://git-scm.com/downloads)
 
 ## Structure
 
