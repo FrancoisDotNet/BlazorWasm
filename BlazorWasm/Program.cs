@@ -1,15 +1,19 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
-using Microsoft.AspNetCore.Components.Builder;
+using Microsoft.AspNetCore.Components.Web;
+using System.Threading.Tasks;
 
 namespace BlazorWasm
 {
     class Program
     {
-        static void Main() => BlazorWebAssemblyHost.CreateDefaultBuilder().UseBlazorStartup<Startup>().Build().Run();
-    
-        class Startup
+        //static async Task Main() => await WebAssemblyHostBuilder.CreateDefault().RootComponents.Add<Body>("body").Build().RunAsync();
+
+        public static async Task Main(string[] args)
         {
-            public void Configure(IComponentsApplicationBuilder b) => b.AddComponent<Body>("body");
+            var builder = WebAssemblyHostBuilder.CreateDefault(args);
+            builder.RootComponents.Add<Body>("body");
+
+            await builder.Build().RunAsync();
         }
     }
 }
