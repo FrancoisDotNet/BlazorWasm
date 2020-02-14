@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Blazor.Hosting;
+﻿using static Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilder;
 using Microsoft.AspNetCore.Components.Web;
 using System.Threading.Tasks;
 
@@ -10,7 +10,7 @@ namespace BlazorWasm
 
         public static async Task Main()
         {
-            WebAssemblyHostBuilder builder = WebAssemblyHostBuilder.CreateDefault();
+            var builder = CreateDefault();
             builder.RootComponents.Add<Body>("body");
             await builder.Build().RunAsync();
         }
