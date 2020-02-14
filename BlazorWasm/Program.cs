@@ -10,9 +10,8 @@ namespace BlazorWasm
 
         public static async Task Main()
         {
-            var builder = WebAssemblyHostBuilder.CreateDefault();
+            WebAssemblyHostBuilder builder = WebAssemblyHostBuilder.CreateDefault();
             builder.RootComponents.Add<Body>("body");
-
             await builder.Build().RunAsync();
         }
     }
