@@ -1,5 +1,4 @@
 ﻿using static Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilder;
-using Microsoft.AspNetCore.Components.Web;
 using System.Threading.Tasks;
 
 namespace BlazorWasm
